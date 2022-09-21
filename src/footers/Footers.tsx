@@ -9,10 +9,10 @@ export const Footers = () => {
             <div className={`${c.container} ${s.skillsContainer}`}>
                 <h2 className={s.title}>Maksim Chernik</h2>
                 <div className={s.skills}>
-                    <Footer icon={"JS"} />
-                    <Footer icon={"CSS"} />
-                    <Footer icon={"REACT"} />
-                    <Footer icon={"TS"} />
+                    <Footer icon={""} />
+                    <Footer icon={""} />
+                    <Footer icon={""} />
+                    <Footer icon={""} />
                 </div>
                 <h4 className={s.title}>"© 2022 Все права защищены."</h4>
             </div>

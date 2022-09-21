@@ -1,5 +1,5 @@
 .skillsBlock{
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     background-color: rosybrown;
 }
 .skillsContainer{
@@ -13,13 +13,18 @@
     background-color: darkseagreen;
 }
 .form{
-    width: 100%;
+    width: 280px;
+    min-height: 100px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid;
+    margin-bottom: 20px;
 }
 .button {
-    margin: auto;
     background-color: darkseagreen;
     border: 1px solid;
-    padding-top:10px;
+}
+.textarea{
+    height: 100px;
 }

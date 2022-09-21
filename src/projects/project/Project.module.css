@@ -4,17 +4,18 @@
     background-color: darkseagreen;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 .icon{
     height:290px;
     width: 290px;
     background-color: white;
+    /*background-image: url("https://klike.net/uploads/posts/2018-11/1542784826_1.jpg");*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
 s.description{
     border: 1px solid;
@@ -23,8 +24,4 @@ s.description{
 s.title{
     border: 1px solid;
     color: coral;
-}
-s.title2{
-    color: coral;
-    border: 1px solid;
 }

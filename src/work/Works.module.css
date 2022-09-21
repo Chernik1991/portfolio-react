@@ -1,5 +1,5 @@
 .skillsBlock{
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     background-color: goldenrod;
 }
 .skillsContainer{
@@ -14,8 +14,10 @@
 .button{
     border: 1px solid ;
     border-radius: 5px;
-    width: 10vh;
+    width: 70px;
+    height: 20px;
     display: flex;
+    flex-direction: column;
     align-self: center;
     text-align: center;
 
