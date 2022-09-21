@@ -7,9 +7,9 @@ export const Project = (props: any) => {
             <div className={s.icon}>
                 <a className={s.button}>{'Смотреть'}</a>
             </div>
-            <div className={s.title2}>
-                <h3 className={s.title}>{props.title}</h3>
-                <span className={s.description}>{props.description}</span>
+            <div>
+                <div className={s.title}><h3 className={s.title2}>{props.title}</h3></div>
+                <div><span className={s.description}>{props.description}</span></div>
             </div>
         </div>
     );
