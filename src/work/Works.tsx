@@ -7,7 +7,7 @@ export const Works = () => {
         <div className={s.skillsBlock}>
             <div className={`${c.container} ${s.skillsContainer}`}>
                 <h2 className={s.title}>Looking into remote work options</h2>
-                <button className={s.button}> Hire me</button>
+                <a href={""} className={s.button}> Hire me</a>
                 </div>
             </div>
     );
