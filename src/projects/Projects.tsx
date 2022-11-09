@@ -11,7 +11,7 @@ export const Projects = () => {
                 <Title title={"My Projects"}/>
                 <div className={s.projects}>
                     <Project title={'Social Network'} description={'send.......'}/>
-                    <Project title={'Todo List'} description={'send.......'}/>
+                    <Project title={'Todo List'} description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...'}/>
                 </div>
             </div>
         </div>
