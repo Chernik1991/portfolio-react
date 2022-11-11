@@ -1,10 +1,11 @@
+@import "src/common/styles/sass/variables.sass";
 .title{
     /*border: 1px solid;*/
     margin-bottom: 20px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 35px;
     line-height: 1.25;
-    color: #fb503b;
+    color: $primaryColor;
     letter-spacing: 5px;
     position: relative;
     .title h2{
@@ -13,7 +14,7 @@
     &::before{
         content:"";
         position: absolute;
-        background:#4e93e6;
+        background:$bgColor;
         width: 55px;
         height: 1px;
         bottom: -30px;
