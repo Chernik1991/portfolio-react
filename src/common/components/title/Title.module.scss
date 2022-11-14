@@ -1,24 +1,23 @@
 @import "src/common/styles/sass/variables.sass";
+@import "src/common/styles/sass/mixins.sass";
 .title{
     /*border: 1px solid;*/
     margin-bottom: 20px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 35px;
-    line-height: 1.25;
+    @include text($titleFontFamily,35px, 1.25);
     color: $primaryColor;
     letter-spacing: 5px;
     position: relative;
     .title h2{
         margin: 0;
     }
-    &::before{
-        content:"";
-        position: absolute;
-        background:$bgColor;
-        width: 55px;
-        height: 1px;
-        bottom: -30px;
-        left: 50%;
-        transform: translate(-50%,50%);
-    }
+    //&::before{
+    //    content:"";
+    //    position: absolute;
+    //    background:$bgColor;
+    //    width: 55px;
+    //    height: 1px;
+    //    bottom: -30px;
+    //    left: 50%;
+    //    transform: translate(-50%,50%);
+    //}
 }

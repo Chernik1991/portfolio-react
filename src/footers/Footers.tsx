@@ -1,14 +1,15 @@
 import React from 'react';
-import s from './Footers.module.css'
+import s from './Footers.module.scss'
 import c from '../../src/common/styles/Container.module.css'
 import {Footer} from './footer/Footer';
+import {Title} from '../common/components/title/Title';
 
 export const Footers = () => {
     return (
-        <div className={s.skillsBlock}>
-            <div className={`${c.container} ${s.skillsContainer}`}>
-                <h2 className={s.title}>Maksim Chernik</h2>
-                <div className={s.skills}>
+        <div className={s.footersBlock}>
+            <div className={`${c.container} ${s.footersContainer}`}>
+                <Title title={"Maksim Chernik"}/>"
+                <div className={s.footers}>
                     <Footer icon={""} />
                     <Footer icon={""} />
                     <Footer icon={""} />

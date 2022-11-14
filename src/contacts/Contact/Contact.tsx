@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Skill.module.css'
+import s from './Contact.module.scss'
 
 export const Skill = (props:any) => {
     return (

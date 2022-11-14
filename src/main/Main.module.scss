@@ -1,0 +1,20 @@
+@import "src/common/styles/sass/variables.sass";
+@import "src/common/styles/sass/mixins.sass";
+
+.mainBlock {
+    height: 100vh;
+    background-color: $bgColor;
+.text {
+    width: 300px;
+    background-color: $bgColorSecond;
+    @include text($titleFontFamily,16px, 1.2);
+
+    letter-spacing: 1px;
+    margin: 0 0 5px;
+}
+.photo {
+    width: 300px;
+    height: 400px;
+    background-color: $bgColorSecond;
+}
+}

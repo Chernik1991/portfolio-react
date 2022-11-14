@@ -1,0 +1,12 @@
+@import "src/common/styles/sass/variables.sass";
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+
+  .icon {
+    width: 60px;
+    background-color: $bgColorSecond;
+  }
+}

@@ -1,0 +1,35 @@
+@import "src/common/styles/sass/variables.sass";
+@import "src/common/styles/sass/mixins.sass";
+.skillsBlock {
+  /*min-height: 100vh;*/
+  background-color: $bgColor;
+
+  .skillsContainer {
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    .form {
+      width: 50%;
+      min-height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid;
+      margin-bottom: 20px;
+      color:$textColor;
+      @media screen and (max-width: 362px) {
+        width: 100%;
+      }
+      .button {
+        background-color: $primaryColor;
+        border: 1px solid;
+        @include text($textFontFamily,16px, 1.8);
+        letter-spacing: 1px;
+        text-align: center;
+      }
+      .textarea {
+        height: 100px;
+      }
+    }
+  }
+}
