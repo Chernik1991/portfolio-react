@@ -1,55 +1,59 @@
 @import "src/common/styles/sass/variables.sass";
 @import "src/common/styles/sass/mixins.sass";
+@import "src/common/components/button/Button.module";
+
 .project {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: $bgColorSecond;
+
+  .icon {
+    height: 400px;
     width: 500px;
     display: flex;
-    flex-direction: column;
-    background-color: $bgColorSecond;
-    .icon {
-        height: 400px;
-        width: 500px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative;
-        &::before{
-            position: absolute;
-            content: "";
-            background-color: black;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            opacity: 0.4;
-        }
-        .button {
-            background-color: $primaryColor;
-            padding: 10px 20px;
-            position: relative;
-            z-index: 1;
-            color:$textColor;
-            &:hover{
-                text-decoration: underline;
-            }
-        }
-    }
-    .projectInfo {
-        padding: 25px 20px;
-        .title {
-            @include text($titleFontFamily,16px, 1.2);
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 
-            letter-spacing: 1px;
-            margin: 0 0 5px;
-        }
-        .description {
-            @include text($textFontFamily,12px, 1.8);
-            letter-spacing: 1px;
-            text-align: center;
-
-            margin: 0 0 5px;
-        }
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: black;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.4;
     }
+
+    .button {
+      @extend .btn;
+      align-self: center;
+      background-color: transparent;
+      margin-top: 30px;
+    }
+  }
+
+  .projectInfo {
+    padding: 25px 20px;
+
+    .title {
+      @include text($titleFontFamily, 16px, 1.2, 300);
+
+      letter-spacing: 1px;
+      margin: 0 0 5px;
+    }
+
+    .description {
+      @include text($textFontFamily, 12px, 1.8, 300);
+      letter-spacing: 1px;
+      text-align: center;
+
+      margin: 0 0 5px;
+    }
+  }
 }

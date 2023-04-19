@@ -1,11 +1,10 @@
 @import "src/common/styles/sass/variables.sass";
 @import "src/common/styles/sass/mixins.sass";
-.nav {
-    border: 1px solid;
 
-    width: 300px;
-    display: flex;
-    justify-content:space-between;
-    @include text($titleFontFamily,16px, 1.2);
-    color: $primaryColor;
+.nav {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  @include text($titleFontFamily, 16px, 1.2, 300);
+  color: $primaryColor;
 }

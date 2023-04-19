@@ -1,9 +1,10 @@
 @import "src/common/styles/sass/variables.sass";
+
 .header {
-    height: 80px;
-    background-color: $bgColor;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    color: $primaryColor;
+  height: 80px;
+  background-color: $bgColor2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: $primaryColor;
 }

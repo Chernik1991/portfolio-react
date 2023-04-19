@@ -1,34 +1,30 @@
 @import "src/common/styles/sass/variables.sass";
 @import "src/common/styles/sass/mixins.sass";
-.skillsBlock{
-    /*min-height: 100vh;*/
-    background-color: $bgColor;
-    .skillsContainer{
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: column;
-        .title{
-            margin-bottom: 20px;
-            @include text($titleFontFamily,35px, 1.2);
-            color: $primaryColor;
-            letter-spacing: 5px;
-        }
-        .button{
-            //border: 1px solid ;
-            border-radius: 5px;
-            width: 70px;
-            height: 20px;
-            display: flex;
-            flex-direction: column;
-            align-self: center;
-            text-align: center;
-            background-color: $primaryColor;
-            color:$textColor;
-            padding: 10px 20px;
-            &:hover{
-                text-decoration: underline;
-            }
-        }
+@import "src/common/components/button/Button.module";
+
+.skillsBlock {
+  min-height: 100vh;
+  background-color: $bgColor2;
+
+  .skillsContainer {
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    .title {
+      margin-bottom: 20px;
+      @include text($titleFontFamily, 35px, 1.2, 300);
+      color: $primaryColor;
+      letter-spacing: 5px;
     }
+
+    .button {
+      @extend .btn;
+      align-self: center;
+      background-color: transparent;
+      margin-top: 30px;
+    }
+  }
 }
+
 
