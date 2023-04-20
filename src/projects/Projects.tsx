@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './Projects.module.scss'
-import c from '../../src/common/styles/Container.module.css'
 import {Project} from './project/Project';
 import {Title} from '../common/components/title/Title';
 import todoImage from '../assets/image/todolist.jpg'
@@ -15,15 +14,16 @@ export const Projects = () => {
         backgroundImage: `url(${todoImage})`,
     };
     return (
-        <div className={s.projectsBlock}>
-            <div className={`${c.container} ${s.projectsContainer}`}>
+        <div className={s.projectsBlock} id={'Projects'}>
+            <div className={s.container}>
                 <Title title={'My Projects'}/>
                 <div className={s.projects}>
-                    <Slide direction={'left'} cascade damping={0.1}>
+                    <Slide direction={'left'} cascade damping={0.9}>
                         <Project style={socialNetwork} title={'Social Network'} description={'send.......'}/>
                         <Project style={todolist} title={'Todo List'}
                                  description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...'}/>
-                    </Slide></div>
+                    </Slide>
+            </div>
             </div>
         </div>
     );

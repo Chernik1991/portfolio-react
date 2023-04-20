@@ -5,7 +5,7 @@ import {Slide} from 'react-awesome-reveal';
 
 export const Contacts = () => {
     return (
-        <div className={s.contactsBlock}>
+        <div className={s.contactsBlock} id={'Contacts'}>
             <div className={s.container}>
                 <Title title={'Contacts'}/>
                 <Slide triggerOnce>

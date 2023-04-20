@@ -4,20 +4,31 @@
 
 .project {
   width: 500px;
-  display: flex;
-  flex-direction: column;
+  @include flex(column, center, space-between, wrap);
+  margin-left: 30px;
   background-color: $bgColorSecond;
+  @media screen and (max-width: 1340px) {
+    width: 300px;
+    margin-left: 20px;
+    max-width: 100%;
+    margin-top: 40px;
+    align-items: center;
+  }
+
 
   .icon {
-    height: 400px;
+    @include flex(row, center, center, wrap);
     width: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 400px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    @media screen and (max-width: 1340px) {
+      max-width: 99%;
+      justify-content: center;
+      align-items: center;
+    }
 
     &::before {
       position: absolute;

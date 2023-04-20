@@ -13,7 +13,7 @@ export const Main = () => {
     }, []);
 
     return (
-        <div className={s.mainBlock}>
+        <div className={s.mainBlock} id={'Main'}>
             <Particles
                 className={s.particles}
                 init={particlesInit}

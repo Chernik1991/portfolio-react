@@ -2,9 +2,21 @@
 @import "src/common/styles/sass/mixins.sass";
 
 .nav {
-  width: 300px;
-  display: flex;
-  justify-content: space-between;
-  @include text($titleFontFamily, 16px, 1.2, 300);
-  color: $primaryColor;
+  width: 360px;
+  @include flex(row, space-between, streatch, nowrap);
+
+  a {
+    @include text($titleFontFamily, 16px, 1.2, 400);
+    color: $textColor;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+      color: $primaryColor;
+    }
+
+    .active {
+      color: $primaryColor;
+    }
+  }
 }

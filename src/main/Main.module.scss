@@ -19,7 +19,7 @@
 
   .container {
     @include container();
-    @include flex(row, space-around, center, nowrap);
+    @include flex(row, space-around, center, wrap);
 
     .greeting {
       @include flex(column, flex-start, flex-start, nowrap);
